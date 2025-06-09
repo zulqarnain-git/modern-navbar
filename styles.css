@@ -1,0 +1,226 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e9ecef; 
+}
+
+.navbar-custom {
+  background: linear-gradient(90deg, #0052d4 0%, #4364f7 50%, #6fb1fc 100%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.85rem; 
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.25px;
+  transition: transform 0.2s ease-out;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #f0f0f0;
+  transform: scale(1.03); 
+}
+
+/* Search Bar Styling */
+.search-form-wrapper {
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center; 
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; 
+  background-color: rgba(255, 255, 255, 0.15); 
+  border-radius: 50px; 
+  padding: 0.25rem 0.25rem 0.25rem 1rem; 
+  transition: background-color 0.3s ease;
+}
+.search-form:focus-within {
+  background-color: rgba(255, 255, 255, 0.25); 
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.3);
+}
+
+.search-form .form-control {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  box-shadow: none; 
+}
+
+.search-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form .btn-search {
+  background-color: #ffffff; 
+  color: #0052d4; 
+  border-radius: 50%; 
+  padding: 0.5rem;
+  width: 41px;
+  height: 38px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.search-form .btn-search:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.advanced-search-link {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  margin-left: 0.75rem;
+  white-space: nowrap;
+  transition: color 0.2s ease-in-out, text-shadow 0.2s ease;
+}
+
+.advanced-search-link:hover {
+  color: #ffffff;
+  text-decoration: none; 
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Navbar Buttons Styling */
+.navbar-custom .nav-item .btn {
+  font-size: 0.85rem; 
+  font-weight: 600; 
+  padding: 0.6rem 1.1rem; 
+  border-radius: 50px;
+  margin-left: 0.6rem;
+  transition: all 0.25s ease-in-out;
+  border: 1px solid transparent; 
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+.navbar-custom .nav-item .btn i {
+  margin-right: 0.5em; /* Space between icon and text */
+}
+
+.btn-login {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.btn-login:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-subscribe {
+  background-color: #ffd700; 
+  color: #333333; 
+  border-color: #ffd700;
+}
+.btn-subscribe:hover {
+  background-color: #ffc107; 
+  border-color: #ffc107;
+  color: #000000;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+.btn-free-registration {
+  background-color: #ffffff; 
+  color: #0052d4; 
+  border-color: #ffffff;
+}
+.btn-free-registration:hover {
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+  color: #003d99;
+  transform: translateY(-2px);
+}
+
+.btn-my-account {
+  /* Style for My Account button */
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.btn-my-account:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-logout {
+  /* Style for Logout button */
+  background-color: #dc3545; 
+  color: #ffffff;
+  border-color: #dc3545;
+}
+.btn-logout:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  transform: translateY(-2px);
+}
+
+/* Hamburger Menu Icon Styling */
+.navbar-custom .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-custom .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.3);
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  /* Bootstrap's lg breakpoint */
+  .search-form-wrapper {
+    padding: 0 0.5rem; 
+  }
+  .search-form {
+    max-width: none;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.2
+    ); 
+  }
+  .advanced-search-link {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav {
+    align-items: stretch; 
+    padding-top: 0.5rem;
+  }
+  .navbar-custom .nav-item .btn {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0.75rem;
+    justify-content: center; 
+  }
+  .navbar-custom .nav-item:last-child .btn {
+    margin-bottom: 0.25rem; 
+  }
+}
